@@ -1,4 +1,5 @@
-main:
-	g++ --std=c++17 game.cpp -o game
+make:
+	g++ *.cpp -std=c++11
+	./a.out
 clean:
-	rm game
+	rm a.out
