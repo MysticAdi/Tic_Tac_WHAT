@@ -19,7 +19,7 @@ void Grid::put_line()
 
 void Grid::initialise_grid()
 {
-    char grid[size][size];
+    char mat[size][size];
 	int num=49;
 	for(int i=0;i<size;i++)
 	{	
@@ -29,9 +29,24 @@ void Grid::initialise_grid()
 		for(int j=0;j<size;j++)
 		{	
 			char number = (char)num;
-			grid[i][j]=number;
-			cout<<grid[i][j]<<"|";
+			mat[i][j]=number;
+			cout<<mat[i][j]<<"|";
 			num++;
+		}
+		cout<<endl;
+	}
+	put_line();
+}
+
+void Grid::show_grid()
+{
+	for(int i=0;i<size;i++)
+	{
+		put_line();
+		put_first();
+		for(int j=0;j<size;j++)
+		{
+			cout<<mat[i][j]<<"|";
 		}
 		cout<<endl;
 	}

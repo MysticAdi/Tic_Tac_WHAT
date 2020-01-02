@@ -2,14 +2,12 @@
 
 #include<iostream>
 #include<string>
-#include "grid.h"
+#include "game.h"
 
 using namespace std;
 
-#define size 3
-
 int main()
 {
-	Grid grid;
-	grid.initialise_grid();
+	Game g;
+	g.begin();
 }

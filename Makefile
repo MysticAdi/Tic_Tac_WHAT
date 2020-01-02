@@ -1,5 +1,5 @@
 make:
-	g++ *.cpp -std=c++11
-	./a.out
+	g++ *.cpp -std=c++11 -o original_game
+	./original_game
 clean:
-	rm a.out
+	rm original_game
